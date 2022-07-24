@@ -9,7 +9,7 @@ const resultDiv = document.querySelector('.converter__result');
 
 function getAllCurrency () {
     const table = "A";
-    const url = `http://api.nbp.pl/api/exchangerates/tables/${table}/?format=json`;
+    const url = `https://api.nbp.pl/api/exchangerates/tables/${table}/?format=json`;
     return fetch(url)
     .then(response => response.json())
     .then(data => {
@@ -39,7 +39,7 @@ function getAllCurrency () {
 
 function getCurrency(code){
     const table = "A";
-    const url = `http://api.nbp.pl/api/exchangerates/rates/${table}/${code}/`;
+    const url = `https://api.nbp.pl/api/exchangerates/rates/${table}/${code}/`;
     return fetch(url)
     .then(response => response.json())
     .then(data => {
