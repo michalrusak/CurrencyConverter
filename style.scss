@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: cadetblue;
+    &__text{
+        line-height: 80px;
+        text-align: center;
+        font-size: 36px;
+    }
+}
+
+.wrapper{
+    background-color: antiquewhite;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+.converter{
+    float: left;
+    width: 35%;
+    min-height: 800px;
+    &__form{
+        margin: 50px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 300px;
+        height: 250px;
+        border-radius: 8px;
+        background-color: rgb(189, 218, 189);
+
+    }
+    &__amount{
+        width: 80%;
+        font-size: 20px;
+    }
+    &__currencyOne{
+        font-size: 20px;
+    }
+    &__arrow{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    &__currencyTwo{
+        font-size: 20px;
+    }
+    &__button{
+        padding: 10px 15px;
+        width: 60%;
+        font-size: 20px;
+        border: none;
+        border-radius: 3px;
+        &:hover{
+            background-color: #999;
+        }
+    }
+    &__result{
+        text-align: center;
+        font-size: 26px;
+        line-height: 40px;
+        width: 200px;
+        height: 40px;
+        background-color: #eee;
+    }
+
+}
+
+.tablebox{
+    float: left;
+    padding: 20px 0;
+    width: 65%;
+    min-height: 800px;
+    .table{
+        margin: 0 auto;
+        width: 800px;
+        border: 2px solid #454;
+        border-collapse: collapse;
+        &__headertable{
+            text-transform: uppercase;
+            background-color: aquamarine;
+            font-size: 28px;   
+            line-height: 40px;   
+        }
+        &__row{
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 20px;
+            background-color: #eee;
+            &:nth-child(even){
+                background-color: #999;
+            }
+            &:hover{
+                color: white;
+                background-color: rgb(164, 54, 54)
+            }
+        }
+
+    }
+}
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color: cadetblue;
+    &__text{
+        line-height: 80px;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+}

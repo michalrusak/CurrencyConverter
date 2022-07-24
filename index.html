@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Kursy walut NBP</title>
+</head>
+
+<body>
+    <header class="header">
+        <p class="header__text">Kursy walut NBP</p>
+    </header>
+    <div class="wrapper clearfix">
+        <section class="converter">
+            <div class="converter__form">
+                <input type="number" class="converter__amount">
+                <div class="converter__selects">
+                    <select name="selectOne" id="selectOne" class="converter__currencyOne">
+                        <option value="PLN" selected>PLN</option>
+                    </select>
+                    <span class="fa-solid fa-arrow-right-long converter__arrow"></span>
+                    <select name="selectTwo" id="selectTwo" class="converter__currencyTwo">
+                        <option value="PLN">PLN</option>
+                    </select>
+                </div>
+                <button class="converter__button">Przelicz</button>
+                <div class="converter__result"></div>
+            </div>
+        </section>
+
+        <section class="tablebox">
+            <table class="table">
+                <thead class="table__headertable">
+                    <tr>
+                        <th>Waluta</th>
+                        <th>Kod</th>
+                        <th>Kurs</th>
+                    </tr>
+                </thead>
+                <tbody class="table__tbody"></tbody>
+            </table>
+        </section>
+    </div>
+    <footer class="footer">
+        <p class="footer__text">Dane pochodzą z API Narodowego Banku Polskiego</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
